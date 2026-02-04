@@ -136,15 +136,106 @@ main {
     line-height: 1.5;
 }
 
-.updates-list {
-    list-style-type: disc;
-    margin-left: 25px;
-    color: #4a5568;
+.updates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
 }
 
-.updates-list li {
+.update-card {
+    padding: 25px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f7fafc 0%, #ffffff 100%);
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.update-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #2c5282, #4a90e2);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.update-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(44, 82, 130, 0.2);
+    border-color: #2c5282;
+}
+
+.update-card:hover::before {
+    transform: scaleX(1);
+}
+
+.update-internship {
+    border-top: 4px solid #48bb78;
+}
+
+.update-publication {
+    border-top: 4px solid #4299e1;
+}
+
+.update-patent {
+    border-top: 4px solid #ed8936;
+}
+
+.update-icon {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    display: inline-block;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.update-content h4 {
+    color: #1a202c;
+    font-size: 1.15em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.update-content p {
+    color: #4a5568;
+    line-height: 1.6;
     margin-bottom: 12px;
-    line-height: 1.7;
+    font-size: 0.95em;
+}
+
+.update-date {
+    display: inline-block;
+    background-color: #edf2f7;
+    color: #2d3748;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+.update-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #2c5282, #4a90e2);
+    color: #fff;
+    padding: 5px 14px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(44, 82, 130, 0.3);
 }
 
 .location {
@@ -766,5 +857,13 @@ footer {
     .project-item:hover,
     .achievement-item:hover {
         transform: none;
+    }
+
+    .updates-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .update-card:hover {
+        transform: translateY(-3px);
     }
 }
