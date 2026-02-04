@@ -260,45 +260,86 @@ main {
 
 /* Experience Page */
 .experience-list {
-    margin-top: 20px;
+    margin-top: 30px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.experience-list::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #2c5282, #4a90e2);
 }
 
 .experience-item {
-    margin-bottom: 35px;
-    padding: 25px;
-    background-color: #f7fafc;
-    border-radius: 6px;
-    border-left: 4px solid #2c5282;
+    margin-bottom: 40px;
+    padding: 25px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: -37px;
+    top: 30px;
+    width: 14px;
+    height: 14px;
+    background-color: #2c5282;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #e2e8f0;
+}
+
+.experience-item:hover {
+    box-shadow: 0 4px 12px rgba(44, 82, 130, 0.15);
+    transform: translateX(5px);
 }
 
 .exp-header {
     display: flex;
     justify-content: space-between;
     align-items: start;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .exp-header h3 {
-    font-size: 1.3em;
+    font-size: 1.35em;
     color: #1a202c;
-    margin: 0 0 5px 0;
+    margin: 0 0 8px 0;
+    font-weight: 600;
 }
 
 .exp-organization {
     color: #2c5282;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 10px;
+    font-size: 1.05em;
 }
 
 .exp-date {
     color: #718096;
     font-style: italic;
     white-space: nowrap;
+    font-size: 0.95em;
+    background-color: #edf2f7;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-weight: 500;
 }
 
 .exp-details {
     color: #4a5568;
-    margin-top: 10px;
+    margin-top: 12px;
+    line-height: 1.7;
 }
 
 .exp-details ul {
@@ -307,75 +348,154 @@ main {
 }
 
 .exp-details li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 /* Projects Page */
 .projects-list {
-    margin-top: 20px;
+    margin-top: 30px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.projects-list::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #2c5282, #4a90e2);
 }
 
 .project-item {
-    margin-bottom: 35px;
-    padding: 25px;
-    background-color: #f7fafc;
-    border-radius: 6px;
-    border-left: 4px solid #2c5282;
+    margin-bottom: 40px;
+    padding: 25px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.project-item::before {
+    content: '';
+    position: absolute;
+    left: -37px;
+    top: 30px;
+    width: 14px;
+    height: 14px;
+    background-color: #2c5282;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #e2e8f0;
+}
+
+.project-item:hover {
+    box-shadow: 0 4px 12px rgba(44, 82, 130, 0.15);
+    transform: translateX(5px);
 }
 
 .project-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .project-header h3 {
-    font-size: 1.3em;
+    font-size: 1.35em;
     color: #1a202c;
     margin: 0;
+    font-weight: 600;
 }
 
 .project-date {
     color: #718096;
     font-style: italic;
+    font-size: 0.95em;
+    background-color: #edf2f7;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-weight: 500;
 }
 
 .project-location {
     color: #2c5282;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 10px;
+    font-size: 1.05em;
 }
 
 .project-description {
     color: #4a5568;
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
 /* Achievements */
 .achievements-list {
-    margin-top: 20px;
+    margin-top: 30px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.achievements-list::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #2c5282, #4a90e2);
 }
 
 .achievement-item {
     display: flex;
     gap: 25px;
-    margin-bottom: 25px;
-    padding: 20px;
-    background-color: #f7fafc;
-    border-radius: 6px;
+    margin-bottom: 30px;
+    padding: 20px 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.achievement-item::before {
+    content: '';
+    position: absolute;
+    left: -37px;
+    top: 25px;
+    width: 14px;
+    height: 14px;
+    background-color: #2c5282;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #e2e8f0;
+}
+
+.achievement-item:hover {
+    box-shadow: 0 4px 12px rgba(44, 82, 130, 0.15);
+    transform: translateX(5px);
 }
 
 .achievement-year {
     font-weight: 700;
     color: #2c5282;
-    font-size: 1.2em;
+    font-size: 1.15em;
     min-width: 60px;
+    background-color: #edf2f7;
+    padding: 4px 12px;
+    border-radius: 12px;
+    height: fit-content;
 }
 
 .achievement-content h4 {
     color: #1a202c;
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
 .achievement-content p {
@@ -622,5 +742,29 @@ footer {
         width: 100%;
         max-width: 180px;
         margin-top: 20px;
+    }
+
+    .experience-list,
+    .projects-list,
+    .achievements-list {
+        padding-left: 20px;
+    }
+
+    .experience-list::before,
+    .projects-list::before,
+    .achievements-list::before {
+        left: 5px;
+    }
+
+    .experience-item::before,
+    .project-item::before,
+    .achievement-item::before {
+        left: -27px;
+    }
+
+    .experience-item:hover,
+    .project-item:hover,
+    .achievement-item:hover {
+        transform: none;
     }
 }
