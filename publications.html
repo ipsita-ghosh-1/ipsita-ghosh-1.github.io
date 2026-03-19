@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications - Ipsita Ghosh</title>
+    <title>Publications &amp; Patents - Ipsita Ghosh</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -12,7 +12,7 @@
         <div class="header-content">
             <div class="site-title">
                 <h1><a href="index.html">Ipsita Ghosh</a></h1>
-                <p class="site-subtitle">PhD Researcher in Machine Learning</p>
+                <p class="site-subtitle">ML Researcher • Optimization • Low-Rank Learning</p>
             </div>
             <nav>
                 <ul>
@@ -32,48 +32,95 @@
 
     <main>
         <div class="container">
-            <section class="content-section">
-                <h2>Publications & Patents</h2>
+            <section class="content-section publications-page">
+                <div class="publication-hero">
+                    <p class="section-kicker">Verified record</p>
+                    <h2>Publications &amp; Patents</h2>
+                    <p>This page highlights the work I most want people to read first: efficient low-rank training, geometry reconstruction, and applied optimization work that made it into patented systems.</p>
+                    <p class="verification-note">Entries below were checked against conference records, OpenReview, and patent databases.</p>
+                </div>
 
-                <div class="publications-list">
-                    <h3>Conference Publications</h3>
-
-                    <div class="publication-item">
-                        <div class="pub-venue">NeurIPS 2025</div>
-                        <div class="pub-title">Quadratic Reweighted Rank Regularizer for Effective Low-Rank Training</div>
-                        <div class="pub-authors"><strong>Ipsita Ghosh</strong>*, E. Nguyen*, C. Kuemmerle</div>
-                        <div class="pub-note">*Equal contribution</div>
+                <div class="publication-section">
+                    <div class="section-intro">
+                        <p class="section-kicker">Research papers</p>
+                        <h3>Featured publications</h3>
                     </div>
 
-                    <div class="publication-item">
-                        <div class="pub-venue">NeurIPS 2024</div>
-                        <div class="pub-title">Sample-Efficient Geometry Reconstruction from Euclidean Distances Using Non-Convex Optimization</div>
-                        <div class="pub-authors"><strong>Ipsita Ghosh</strong>, A. Tasissa, C. Kuemmerle</div>
-                        <div class="pub-links">
-                            <a href="https://arxiv.org/pdf/2410.16982" target="_blank">[Paper]</a>
-                        </div>
+                    <div class="publication-feature-grid">
+                        <article class="publication-feature-card">
+                            <div class="pub-badge-row">
+                                <span class="pub-badge">NeurIPS 2025</span>
+                                <span class="pub-badge">Poster</span>
+                            </div>
+                            <h4>Q3R: Quadratic Reweighted Rank Regularizer for Effective Low-Rank Training</h4>
+                            <p class="pub-authors"><strong>Ipsita Ghosh</strong>, Ethan Nguyen, Christian Kümmerle</p>
+                            <p class="pub-summary">Introduces a low-rank regularization method for training low-rank models directly, instead of relying only on low-rank fine-tuning after dense pretraining.</p>
+                            <ul class="pub-summary-list">
+                                <li>Frames Q3R through an IRLS-inspired objective for low-rank optimization.</li>
+                                <li>Reports strong compression results on Transformer-style models, including ViT-Tiny.</li>
+                                <li>Positions the work around practical low-rank pretraining rather than only parameter-efficient adaptation.</li>
+                            </ul>
+                            <div class="pub-links">
+                                <a href="https://openreview.net/forum?id=ZtzWvNKOCr" target="_blank">OpenReview</a>
+                                <a href="https://openreview.net/pdf?id=ZtzWvNKOCr" target="_blank">PDF</a>
+                                <a href="https://neurips.cc/virtual/2025/loc/san-diego/poster/117315" target="_blank">NeurIPS page</a>
+                            </div>
+                        </article>
+
+                        <article class="publication-feature-card">
+                            <div class="pub-badge-row">
+                                <span class="pub-badge">NeurIPS 2024</span>
+                                <span class="pub-badge">Poster</span>
+                            </div>
+                            <h4>Sample-Efficient Geometry Reconstruction from Euclidean Distances using Non-Convex Optimization</h4>
+                            <p class="pub-authors"><strong>Ipsita Ghosh</strong>, Abiy Tasissa, Christian Kümmerle</p>
+                            <p class="pub-summary">Studies how to recover geometric structure from sparse pairwise distances using non-convex rank minimization and an IRLS-style algorithm.</p>
+                            <ul class="pub-summary-list">
+                                <li>Gives a local convergence guarantee under minimal random distance sampling assumptions.</li>
+                                <li>Establishes a restricted isometry property tailored to the tangent space of low-rank symmetric matrices.</li>
+                                <li>Shows stronger data efficiency than prior baselines on simulated and real-world geometry reconstruction tasks.</li>
+                            </ul>
+                            <div class="pub-links">
+                                <a href="https://openreview.net/forum?id=Yu7H8ZOuI2" target="_blank">OpenReview</a>
+                                <a href="https://arxiv.org/pdf/2410.16982" target="_blank">PDF</a>
+                                <a href="https://github.com/ipsita-ghosh-1/EDG-IRLS" target="_blank">Code</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="publication-section">
+                    <div class="section-intro">
+                        <p class="section-kicker">Intellectual property</p>
+                        <h3>Patents from industry work</h3>
                     </div>
 
-                    <div class="publication-item">
-                        <div class="pub-venue">SIAM 2024</div>
-                        <div class="pub-title">Solving Euclidean Distance Geometry Problems from Few Samples via IRLS</div>
-                        <div class="pub-authors"><strong>Ipsita Ghosh</strong>, C. Kuemmerle, A. Tasissa</div>
-                    </div>
+                    <div class="publication-feature-grid patent-grid">
+                        <article class="publication-feature-card patent-card">
+                            <div class="pub-badge-row">
+                                <span class="pub-badge">Granted patent</span>
+                                <span class="pub-badge">May 2024</span>
+                            </div>
+                            <h4>US11994936B2: Automated optimization of error-handling flows in memory devices</h4>
+                            <p class="pub-authors">Jay Sarkar, <strong>Ipsita Ghosh</strong>, Vamsi Pavan Rayaprolu</p>
+                            <p class="pub-summary">Covers automated reordering of SSD error-handling operations using latency and recovery information, with the goal of improving memory-system performance under real workloads.</p>
+                            <div class="pub-links">
+                                <a href="https://patents.google.com/patent/US11994936B2/en" target="_blank">Google Patents</a>
+                            </div>
+                        </article>
 
-                    <h3>Patents</h3>
-
-                    <div class="publication-item">
-                        <div class="pub-venue">US Patent (Granted)</div>
-                        <div class="pub-title">US 12019874 B2: Automated Optimization of Error-Handling Flows in Memory Devices</div>
-                        <div class="pub-authors">J. Sarkar, <strong>Ipsita Ghosh</strong>, V. P. Rayaprolu</div>
-                        <div class="pub-date">Granted June 2024</div>
-                    </div>
-
-                    <div class="publication-item">
-                        <div class="pub-venue">US Patent (Granted)</div>
-                        <div class="pub-title">US 11949363 B2: Application Level Adaptive SSD Optimization for Error Handling</div>
-                        <div class="pub-authors">J. Sarkar, V. P. Rayaprolu, <strong>Ipsita Ghosh</strong></div>
-                        <div class="pub-date">Granted May 2024</div>
+                        <article class="publication-feature-card patent-card">
+                            <div class="pub-badge-row">
+                                <span class="pub-badge">Granted patent</span>
+                                <span class="pub-badge">June 2024</span>
+                            </div>
+                            <h4>US12019874B2: Adaptive optimization of error-handling flows in memory devices</h4>
+                            <p class="pub-authors">Jay Sarkar, <strong>Ipsita Ghosh</strong>, Vamsi Pavan Rayaprolu</p>
+                            <p class="pub-summary">Extends workload-aware optimization of memory-device recovery flows, emphasizing adaptive selection of error-handling behavior under changing operating conditions.</p>
+                            <div class="pub-links">
+                                <a href="https://patents.justia.com/patent/12019874" target="_blank">Patent record</a>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </section>
